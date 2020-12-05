@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Cats</title>
+	</head>
+	<body>
+		<h1>List of Students</h1>
+		<ul>
+			
+			{% for student in students %}
+				<li>
+					<a href="{% url 'detail' student.pk %}">{{ student.Fname }} {{ student.Lname}}</a>
+				</li>
+			{% endfor %}
+			
+			
+		</ul>
+	</body>
+</html>
